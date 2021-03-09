@@ -3,10 +3,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+#api接口
+gem 'grape', '~> 1.3.0'
+
+# 过滤返回前端的字段
+# gem 'grape-entity' 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -21,6 +27,13 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'redis'
+# gem 'hiredis'
+# gem 'redis-namespace'
+gem "redis-rails"
+
+gem 'sidekiq'
+# gem 'sidekiq-status'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -34,6 +47,8 @@ group :development, :test do
 end
 
 group :development do
+  gem 'pry'
+  gem 'pry-rails'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
