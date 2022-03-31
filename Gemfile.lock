@@ -134,7 +134,7 @@ GEM
     mustermann-grape (1.0.1)
       mustermann (>= 1.0.0)
     mysql2 (0.5.1)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     pry (0.12.2)
@@ -143,7 +143,7 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (4.0.3)
-    puma (4.3.1)
+    puma (4.3.12)
       nio4r (~> 2.0)
     rack (2.1.0)
     rack-accept (0.4.5)
@@ -275,7 +275,7 @@ DEPENDENCIES
   mysql2
   pry
   pry-rails
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.2, >= 6.0.2.1)
   redis
   redis-rails
